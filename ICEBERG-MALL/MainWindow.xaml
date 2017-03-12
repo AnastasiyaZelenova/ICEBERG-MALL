@@ -1,0 +1,22 @@
+﻿<Window x:Class="ICEBERG_MALL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICEBERG_MALL"
+        mc:Ignorable="d"
+        Title="Добро пожаловать!" Height="350" Width="525" ResizeMode="NoResize" >
+    <Window.Background>
+        <ImageBrush ImageSource="C:/Users/Анастасия/Desktop/ICEBERG MALL/ICEBERG-MALL/ICEBERG-MALL/startpage.JPG" TileMode="None" Stretch="UniformToFill" AlignmentX="Left"  />
+    </Window.Background>
+    <Grid>
+        <TextBlock x:Name="textBlockNameMall" HorizontalAlignment="Stretch"   Margin="80,106,80,0" FontWeight="Bold" VerticalAlignment="Top"   TextAlignment="Center"  FontSize="38"  Text="ICEBERG MALL"  >
+            <TextBlock.BindingGroup>
+                <BindingGroup/>
+            </TextBlock.BindingGroup></TextBlock>
+        <TextBlock x:Name="textBlockUserLogin" HorizontalAlignment="Right"  Margin="0,0,249,92"  Text="Продолжить просмотр?" VerticalAlignment="Bottom" FontSize="16"  />
+        <Button x:Name="buttonUser" Content="Конечно!" HorizontalAlignment="Right" Height="35" Margin="0,0,139,40" VerticalAlignment="Bottom" Width="95" Click="buttonUser_Click"/>
+        <Button x:Name="buttonAdmin" Content="Вход для администраторов." HorizontalAlignment="Right" Height="21" Margin="0,20,20,0" VerticalAlignment="Top" Width="165" Click="buttonAdmin_Click"/>
+
+    </Grid>
+</Window>
