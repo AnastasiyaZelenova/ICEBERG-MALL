@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace ICEBERG_MALL
 {
     /// <summary>
-    /// Логика взаимодействия для StartPage.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class StartPage : Page
+    public partial class MainPage : Page
     {
-        public StartPage()
+        public MainPage()
         {
             InitializeComponent();
         }
 
-        private void buttonAdmin_Click(object sender, RoutedEventArgs e)
+        private void buttonAddBrand_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("PasswordPage.xaml", UriKind.Relative));
-        }
-
-        private void buttonUser_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("AddBrandPage.xaml", UriKind.Relative));
         }
     }
 }

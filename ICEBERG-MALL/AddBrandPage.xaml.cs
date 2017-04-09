@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace ICEBERG_MALL
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AddBrandPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddBrandPage : Page
     {
-        public MainWindow()
+        public AddBrandPage()
         {
             InitializeComponent();
-        }
-
-        private void buttonUser_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
-        private void buttonAdmin_Click(object sender, RoutedEventArgs e)
-        {
-            PasswordWindow a = new PasswordWindow();
-            a.Show();
         }
     }
 }

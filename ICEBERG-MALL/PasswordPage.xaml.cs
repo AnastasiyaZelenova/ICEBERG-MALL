@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ICEBERG_MALL
 {
     /// <summary>
-    /// Логика взаимодействия для PasswordWindow.xaml
+    /// Логика взаимодействия для PasswordPage.xaml
     /// </summary>
-    public partial class PasswordWindow : Window
+    public partial class PasswordPage : Page
     {
-        public PasswordWindow()
+        public PasswordPage()
         {
             InitializeComponent();
         }
