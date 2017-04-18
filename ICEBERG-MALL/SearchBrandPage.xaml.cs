@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace ICEBERG_MALL
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для SearchBrandPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class SearchBrandPage : Page
     {
-        public MainPage()
+        public SearchBrandPage()
         {
             InitializeComponent();
-        }
-
-        private void buttonAddBrand_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("AddBrandPage.xaml", UriKind.Relative));
-        }
-
-        private void SearchBrand_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("SearchBrandPage.xaml", UriKind.Relative));
         }
     }
 }
