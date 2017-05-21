@@ -11,7 +11,7 @@ namespace ICEBERG_MALL
     public class Methods
     {
         private const string _fileName = "../../Serialization.xml";
-
+        Logger _logger = new Logger();
         private List<Category> _categories = new List<Category>();
        
         public List<Category> Categories
@@ -33,30 +33,35 @@ namespace ICEBERG_MALL
         public void AddCategory(Category category)
         {
             _categories.Add(category);
+            _logger.Log($"Добавлена категория {category.NameCategory}");
             SerializeData();
         }
 
         public void DeleteCategory(Category category)
         {
             _categories.Remove(category);
+            _logger.Log($"Удалена категория {category.NameCategory}");
             SerializeData();
         }
 
         public void EditCategory(Category category, string input)
         {
             category.NameCategory = input;
+            _logger.Log($"Изменена категория {category.NameCategory}");
             SerializeData();
         }
 
         public void AddTradePoint(TradePoint tradepoint, Category category)
         {
             category.TradePoints.Add(tradepoint);
+            _logger.Log($"Добавлена торговая точка {tradepoint.Name}");
             SerializeData();
         }
 
         public void DeleteTradePoint(TradePoint tradepoint, Category category)
         {
             category.TradePoints.Remove(tradepoint);
+            _logger.Log($"Удалена торговая точка {tradepoint.Name}");
             SerializeData();
         }
 
@@ -64,6 +69,7 @@ namespace ICEBERG_MALL
         {
             tradepoint.Name = name;
             tradepoint.Description = description;
+            _logger.Log($"Изменена торговая точка {tradepoint.Name}");
             SerializeData();
         }
 

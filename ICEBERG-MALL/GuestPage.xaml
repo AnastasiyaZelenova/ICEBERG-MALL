@@ -21,25 +21,27 @@
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical">
             <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-            <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus"  Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название категории"  />
+            <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Bottom"  Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название категории"  />
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Column="1">
             <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
             <TextBox x:Name="textBoxTradePoint"  Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название магазина"  />
         </StackPanel>
-        <ListView Name="listViewCategory" Background="AliceBlue" Margin="20,0,20,20" Grid.Row="1"></ListView>
+        <ListView Name="listViewCategory" Background="AliceBlue" DisplayMemberPath="NameCategory" Margin="20,10,20,20" Grid.Row="1" SelectionChanged="listViewCategory_SelectionChanged"></ListView>
 
-        <ListView Name="listViewTradePoint" Background="AliceBlue"  Grid.Column="1" Margin="20,0,20,20" Grid.Row="1">
+        <ListView Name="listViewTradePoint" ItemsSource="{Binding}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="AliceBlue" Grid.Column="1"  Grid.Row="1" Margin="20,10,20,20">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50"/>
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Name}"></TextBlock>
-                        <TextBlock Grid.Column="1" Text="{Binding Description}"></TextBlock>
-                    </Grid>
+                    <DockPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock DockPanel.Dock="Left" Grid.Column="0" Margin="2,0,2,0" Text="{Binding Path = Name}" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBlock>
+                            <TextBlock DockPanel.Dock="Right" Grid.Column="1" Text="{Binding Path = Description}"  TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" VerticalAlignment="Center" ></TextBlock>
+                        </Grid>
+                    </DockPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

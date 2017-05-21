@@ -13,9 +13,10 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-
-        <TextBlock Text="Редактировать категорию" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Margin="0,0,0,40" ></TextBlock>
-        <TextBox Name="textBoxEditCategory" Grid.Row="1" VerticalAlignment="Top" Margin="80,10,80,0" Height="21"></TextBox>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+            <TextBlock Text="Редактировать категорию" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Margin="0,0,0,40" ></TextBlock>
+            <TextBox Name="textBoxEditCategory" Grid.Row="1" VerticalAlignment="Top" Margin="80,10,80,0" Height="21"></TextBox>
+        </StackPanel>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,20,0">
             <Button Name="buttonEditCategoryOk" MinWidth="70" MinHeight="30" Margin="5" Content="Редактировать" Click="buttonEditCategoryOk_Click" ></Button>
             <Button Name="buttonEditCategoryCancel" MinHeight="30" Content="Отмена" Margin="5"  MinWidth="70" Click="buttonEditCategoryCancel_Click"></Button>

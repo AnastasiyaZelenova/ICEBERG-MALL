@@ -20,6 +20,8 @@ namespace ICEBERG_MALL
     /// </summary>
     public partial class StartPage : Page
     {
+        Methods _methods = new Methods();
+        Category _category = new Category();
         public StartPage()
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace ICEBERG_MALL
 
         private void buttonUser_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new GuestPage());
+            NavigationService.Navigate(new GuestPage(_methods, _category));
         }
     }
 }

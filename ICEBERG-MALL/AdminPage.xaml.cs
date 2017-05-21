@@ -22,7 +22,8 @@ namespace ICEBERG_MALL
     {
         Methods _methods = new Methods();
         Category _category = new Category();
-
+        
+        
         public AdminPage(Methods methods, Category category)
         {
             InitializeComponent();

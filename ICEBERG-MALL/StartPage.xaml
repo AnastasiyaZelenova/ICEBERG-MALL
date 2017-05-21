@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ICEBERG_MALL"
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="525"
-      Title="StartPage" WindowTitle="Добро пожаловать!" Height="400" Width="525" >
+      Title="StartPage" WindowTitle="Добро пожаловать!"  >
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>

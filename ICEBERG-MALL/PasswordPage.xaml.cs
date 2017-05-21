@@ -22,11 +22,12 @@ namespace ICEBERG_MALL
     public partial class PasswordPage : Page
     {
         Methods _methods = new Methods();
-        Category _categories = new Category();
+        Category _category = new Category();
         public PasswordPage()
         {
             InitializeComponent();
             textBoxLogin.Focus();
+
         }
         private string CalculateHash(string password)
         {
@@ -48,11 +49,15 @@ namespace ICEBERG_MALL
             var hash = CalculateHash("12345");
 
             //if (textBoxLogin.Text == "zelenova" && CalculateHash(passwordBox.Password) == hash)
-            NavigationService.Navigate(new AdminPage(_methods, _categories));
+            NavigationService.Navigate(new AdminPage(_methods, _category));
             /*else
                 MessageBox.Show("Incorrect login/password");*/
         }
 
+        private void buttonPasswordCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
 

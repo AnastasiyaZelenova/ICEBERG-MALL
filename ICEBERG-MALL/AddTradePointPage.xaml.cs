@@ -74,7 +74,24 @@ namespace ICEBERG_MALL
 
         private void buttonAddTradePointOk_Click(object sender, RoutedEventArgs e)
         {
-            //проверки 
+            if (string.IsNullOrWhiteSpace(textBoxAddTradePointName.Text))
+            {
+                MessageBox.Show("Введите название!");
+                textBoxAddTradePointName.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxAddTradePointDescription.Text))
+            {
+                MessageBox.Show("Введите описание!");
+                textBoxAddTradePointDescription.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(comboBox.Text))
+            {
+                MessageBox.Show("Выберите категорию!");
+                comboBox.Focus();
+                return;
+            }
             if (comboBox.SelectedItem is Category && comboBox.ItemsSource != null)
             {
                 TradePoint temp = new TradePoint(textBoxAddTradePointName.Text, textBoxAddTradePointDescription.Text);

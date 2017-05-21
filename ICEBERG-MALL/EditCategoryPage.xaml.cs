@@ -33,6 +33,12 @@ namespace ICEBERG_MALL
 
         private void buttonEditCategoryOk_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBoxEditCategory.Text))
+            {
+                MessageBox.Show("Введите категорию!");
+                textBoxEditCategory.Focus();
+                return;
+            }
             _methods.EditCategory(_category, textBoxEditCategory.Text);
             NavigationService.Navigate(new AdminPage(_methods, _category));
         }

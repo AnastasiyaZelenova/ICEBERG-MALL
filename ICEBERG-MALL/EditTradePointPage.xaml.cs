@@ -35,9 +35,26 @@ namespace ICEBERG_MALL
             textBoxEditTradePointName.Text = _tradepoint.Name;
         }
 
-        private void buttonAddTradePointOk_Click(object sender, RoutedEventArgs e)
+        private void buttonEditTradePointOk_Click(object sender, RoutedEventArgs e)
         {
-            //проверка полей
+            if (string.IsNullOrWhiteSpace(textBoxEditTradePointName.Text))
+            {
+                MessageBox.Show("Введите имя!");
+                textBoxEditTradePointName.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxEditTradePointDescription.Text))
+            {
+                MessageBox.Show("Введите описание!");
+                textBoxEditTradePointDescription.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(comboBox.Text))
+            {
+                MessageBox.Show("Выберите категорию!");
+                comboBox.Focus();
+                return;
+            }
             _methods.EditTradePoint(_tradepoint, textBoxEditTradePointName.Text, textBoxEditTradePointDescription.Text);
             NavigationService.Navigate(new AdminPage(_methods, _category));
         }

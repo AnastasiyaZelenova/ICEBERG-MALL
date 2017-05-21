@@ -28,38 +28,19 @@ namespace ICEBERG_MALL
             _methods = methods;
             _categories = categories;
         }
+        
 
-
-        bool _addCategoryNameEntered = false;
-        private void textBoxAddCategoryName_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (!_addCategoryNameEntered)
-            {
-                textBoxAddCategoryName.Text = "";
-                textBoxAddCategoryName.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
-        private void textBoxAddCategoryName_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBoxAddCategoryName.Text))
-                _addCategoryNameEntered = true;
-            else
-            {
-                textBoxAddCategoryName.Text = "Введите название категории";
-                _addCategoryNameEntered = false;
-                textBoxAddCategoryName.Foreground = new SolidColorBrush(Colors.Gray);
-            }
-        }
+        
 
         private void buttonAddCategoryOk_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxAddCategoryName.Text))
+            if (string.IsNullOrWhiteSpace(textBoxAddCategoryName.Text))
             {
                 MessageBox.Show("Введите категорию!");
                 textBoxAddCategoryName.Focus();
                 return;
             }
+            
             Category categoryNew = new Category(textBoxAddCategoryName.Text);
             _methods.AddCategory(categoryNew);
             NavigationService.Navigate(new AdminPage(_methods, _categories));

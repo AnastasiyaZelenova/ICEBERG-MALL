@@ -20,9 +20,15 @@ namespace ICEBERG_MALL
     /// </summary>
     public partial class GuestPage : Page
     {
-        public GuestPage()
+        Methods _methods = new Methods();
+        Category _category = new Category();
+
+        public GuestPage(Methods methods, Category category)
         {
             InitializeComponent();
+            listViewCategory.ItemsSource = _methods.Categories;
+            _methods = methods;
+            _category = category;
         }
         bool _categoryEntered = false;
         private void textBoxCategory_GotFocus(object sender, RoutedEventArgs e)
@@ -65,6 +71,19 @@ namespace ICEBERG_MALL
                 _tradePointEntered = false;
                 textBoxTradePoint.Foreground = new SolidColorBrush(Colors.Gray);
             }
+        }
+
+        private void listViewCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listViewCategory.SelectedIndex != -1)
+                listViewTradePoint.ItemsSource = (listViewCategory.SelectedItem as Category).TradePoints;
+            else
+                listViewTradePoint.ItemsSource = null;
+        }
+
+        private void listViewTradePoint_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
