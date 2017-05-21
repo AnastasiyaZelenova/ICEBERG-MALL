@@ -55,41 +55,69 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddBrandPage.xaml.cs">
-      <DependentUpon>AddBrandPage.xaml</DependentUpon>
+    <Compile Include="AddCategoryPage.xaml.cs">
+      <DependentUpon>AddCategoryPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="AddTradePointPage.xaml.cs">
+      <DependentUpon>AddTradePointPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Owner.cs" />
+    <Compile Include="AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs" />
+    <Compile Include="EditCategoryPage.xaml.cs">
+      <DependentUpon>EditCategoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditTradePointPage.xaml.cs">
+      <DependentUpon>EditTradePointPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GuestPage.xaml.cs">
+      <DependentUpon>GuestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Methods.cs" />
     <Compile Include="PasswordPage.xaml.cs">
       <DependentUpon>PasswordPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs" />
-    <Compile Include="SearchBrandPage.xaml.cs">
-      <DependentUpon>SearchBrandPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TradePoint.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="AddBrandPage.xaml">
+    <Compile Include="TradePoint.cs" />
+    <Page Include="AddCategoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="AddTradePointPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditCategoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditTradePointPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GuestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PasswordPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SearchBrandPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

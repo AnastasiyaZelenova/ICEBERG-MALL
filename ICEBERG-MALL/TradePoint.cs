@@ -6,57 +6,38 @@ using System.Threading.Tasks;
 
 namespace ICEBERG_MALL
 {
-    class TradePoint
+   public class TradePoint
     {
-        private string _typeTradePoint;
+        private string _name;
 
-        public string TypeTradePoint
+        public string Name
         {
-            get { return _typeTradePoint; }
-            set { _typeTradePoint = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
-        private string _nameTradePoint;
+        private string _description;
 
-        public string NameTradePoint
+        public string Description
         {
-            get { return _nameTradePoint; }
-            set { _nameTradePoint = value; }
+            get { return _description; }
+            set { _description = value; }
         }
 
-        private int _numberTradePoint;
+        private Category _category;
 
-        public int NumberTradePoint
+        public Category Category
         {
-            get { return _numberTradePoint; }
-            set { _numberTradePoint = value; }
+            get { return _category; }
+            set { _category = value; }
         }
+        public TradePoint() { }
 
-        private DateTime _openingHours;
-
-        public DateTime OpeningHours
+        public TradePoint(string name, string description)
         {
-            get { return _openingHours; }
-            set { _openingHours = value; }
+            _name = name;
+            _description = description;
         }
-
-        private int _floor;
-
-        public int Floor
-        {
-            get { return _floor; }
-            set { _floor = value; }
-        }
-
-        public TradePoint (string typeTradePoint, string nameTradePoint, int numberTradePoint, DateTime openingHours, int floor)
-        {
-            _typeTradePoint = TypeTradePoint;
-            _nameTradePoint = NameTradePoint;
-            _numberTradePoint = NumberTradePoint;
-            _openingHours = OpeningHours;
-            _floor = Floor;
-        }
-
-
+       
     }
 }

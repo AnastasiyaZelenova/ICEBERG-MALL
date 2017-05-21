@@ -4,32 +4,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ICEBERG_MALL"
-      Title="StartPage" WindowTitle="Добро пожаловать!">
-    <Page.CacheMode>
-        <BitmapCache/>
-    </Page.CacheMode>
-    
-    <Grid Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="4">
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="525"
+      Title="StartPage" WindowTitle="Добро пожаловать!" MinHeight="400" MaxHeight="400" MinWidth="525" MaxWidth="525">
+    <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition  ></RowDefinition>
+            <RowDefinition ></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="buttonAdmin" Grid.Row="0" Grid.Column="1" Content="Вход для администраторов" HorizontalAlignment="Right" Height="21"  VerticalAlignment="Top" Width="165" Margin="0,15,15,0" Click="buttonAdmin_Click" />
-        <Label Padding="45,15,0,0" Content="Добро пожаловать!" Grid.Row="0" Grid.Column="0" FontSize="17" Height="54" HorizontalAlignment="Left" Width="252"/>
-        <TextBlock x:Name="textBlockNameMall"  HorizontalAlignment="Stretch" Padding="0,30,0,0" FontWeight="Bold" VerticalAlignment="Top"   TextAlignment="Center"  FontSize="49"  Text="ICEBERG MALL" Height="131" Margin="0,90,-0.2,0" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
-            <TextBlock.BindingGroup>
-                <BindingGroup/>
-            </TextBlock.BindingGroup></TextBlock>
-        <TextBlock x:Name="textBlockUserLogin" Grid.Row="2" HorizontalAlignment="Right"  Padding="100,15,0,92"  Text="Продолжить просмотр?" VerticalAlignment="Bottom" FontSize="16" Height="58" Margin="0,0,151.8,31.4" Width="367" Grid.ColumnSpan="2"  />
-        <Button x:Name="buttonUser" Grid.Row="2" Grid.Column="1" Content="Конечно!" HorizontalAlignment="Right" Height="35" VerticalAlignment="Bottom" Margin="0,0,45,15"  Width="95" Click="buttonUser_Click" />
+        <Button x:Name="buttonAdmin"   Content="Вход для администратора" HorizontalAlignment="Left" Grid.Row="1" Height="35"  VerticalAlignment="Bottom" Width="165" Margin="30,0,0,50" Click="buttonAdmin_Click" />
+        <TextBlock x:Name="textBlockNameMall"   Padding="0,20,0,0" FontWeight="Bold" VerticalAlignment="Top"   TextAlignment="Center" Margin="0,65,0,0" FontSize="49"  Text="ICEBERG MALL"    />
+        <Button x:Name="buttonUser" Content="Продолжить просмотр" Grid.Row="2" HorizontalAlignment="Right" Height="35" VerticalAlignment="Bottom" Margin="0,0,30,50"  Width="165" Click="buttonUser_Click"  />
 
     </Grid>
 </Page>

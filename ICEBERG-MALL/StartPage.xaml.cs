@@ -27,12 +27,12 @@ namespace ICEBERG_MALL
 
         private void buttonAdmin_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("PasswordPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new PasswordPage());
         }
 
         private void buttonUser_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new GuestPage());
         }
     }
 }

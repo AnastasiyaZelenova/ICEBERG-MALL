@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 namespace ICEBERG_MALL
 {
     /// <summary>
-    /// Логика взаимодействия для AddBrandPage.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class AddBrandPage : Page
+    public partial class MainWindow : Window
     {
-        public AddBrandPage()
+        public MainWindow()
         {
             InitializeComponent();
+            Frame.Content = new StartPage();
         }
     }
 }

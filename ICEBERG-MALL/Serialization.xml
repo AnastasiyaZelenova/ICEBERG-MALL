@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Category>
+    <NameCategory>Одежда</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>Зара</Name>
+        <Description>нананнана</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>Zara</Name>
+        <Description>НЕЗАРА</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>Bershka</Name>
+        <Description>Мне не нравки</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>Pull&amp;Bear</Name>
+        <Description>ФУУУУ я просто ненавижу этот магаз, зара в 100500 раз лучше отвечаю !!!!!!!!!!!!</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>гагагга</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>afsassafasf</Name>
+        <Description>asfasf</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+</ArrayOfCategory>

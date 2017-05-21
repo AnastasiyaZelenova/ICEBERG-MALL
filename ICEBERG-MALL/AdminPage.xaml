@@ -1,0 +1,53 @@
+﻿<Page x:Class="ICEBERG_MALL.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ICEBERG_MALL"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="525"
+      Title="AdminPage" WindowTitle="Добро пожаловать"  >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*" />
+            <RowDefinition Height="129*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView Name="listViewTradePoint" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Margin="20,40,20,0" Grid.Row="1" SelectionChanged="listViewTradePoint_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Grid.Column="1" Text="{Binding Description}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Name="listViewCategory" Background="AliceBlue" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,40,20,0" DisplayMemberPath="NameCategory"  Grid.Row="1" SelectionChanged="listViewCategory_SelectionChanged"></ListView>
+        <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Name="buttonRemoveTradePoint" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveTradePoint_Click"></Button>
+            <Button Name="buttonAddTradePoint" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddTradePoint_Click"></Button>
+            <Button Name="buttonEditTradePoint" Content="Изменить" IsEnabled="False" MinWidth="60" Click="buttonEditTradePoint_Click"></Button>
+        </WrapPanel>
+        <WrapPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Name="buttonRemoveCategory" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveCategory_Click"></Button>
+            <Button Name="buttonAddCategory" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddCategory_Click"></Button>
+            <Button Name="buttonEditCategory" MinWidth="60" Content="Изменить" IsEnabled="False" Click="buttonEditCategory_Click" ></Button>
+        </WrapPanel>
+        <TextBox x:Name="textBoxCategory" Grid.Row="1"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Top"  Height="23" Margin="20,0,20,0" TextWrapping="Wrap" Text="Введите название категории"  />
+        <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+        <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+        <TextBox x:Name="textBoxTradePoint" Grid.Row="1" Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" VerticalAlignment="Top" Grid.Column="1" Height="23"  Margin="20,00,20,10" TextWrapping="Wrap" Text="Введите название магазина"  />
+    </Grid>
+</Page>

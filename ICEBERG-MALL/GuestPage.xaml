@@ -1,0 +1,42 @@
+﻿<Page x:Class="ICEBERG_MALL.GuestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ICEBERG_MALL"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="525"
+      Title="GuestPage" WindowTitle="Добро пожаловать">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52*" />
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView Name="listViewTradePoint" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Margin="20,0,20,20" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Grid.Column="1" Text="{Binding Description}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Name="listViewCategory" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,20,20" Grid.Row="1"></ListView>
+        <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus"  Height="23" HorizontalAlignment="Stretch" Margin="20,70,20,10" TextWrapping="Wrap" Text="Введите название категории"  />
+        <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+        <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+        <TextBox x:Name="textBoxTradePoint"  Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="20,70,20,10" TextWrapping="Wrap" Text="Введите название магазина"  />
+    </Grid>
+</Page>
