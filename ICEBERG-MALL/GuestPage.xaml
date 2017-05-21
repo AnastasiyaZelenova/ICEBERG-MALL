@@ -12,14 +12,24 @@
             <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="52*" />
+            <RowDefinition Height="40*" />
             <RowDefinition Height="129*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ListView Name="listViewTradePoint" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Margin="20,0,20,20" Grid.Row="1">
+        <StackPanel Orientation="Vertical">
+            <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus"  Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название категории"  />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <TextBox x:Name="textBoxTradePoint"  Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название магазина"  />
+        </StackPanel>
+        <ListView Name="listViewCategory" Background="AliceBlue" Margin="20,0,20,20" Grid.Row="1"></ListView>
+
+        <ListView Name="listViewTradePoint" Background="AliceBlue"  Grid.Column="1" Margin="20,0,20,20" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -33,10 +43,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ListView Name="listViewCategory" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,20,20" Grid.Row="1"></ListView>
-        <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus"  Height="23" HorizontalAlignment="Stretch" Margin="20,70,20,10" TextWrapping="Wrap" Text="Введите название категории"  />
-        <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-        <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-        <TextBox x:Name="textBoxTradePoint"  Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="20,70,20,10" TextWrapping="Wrap" Text="Введите название магазина"  />
     </Grid>
 </Page>

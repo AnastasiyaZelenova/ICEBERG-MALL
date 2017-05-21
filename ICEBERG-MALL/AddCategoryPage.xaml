@@ -13,10 +13,11 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        
-        <TextBlock Text="Добавить категорию" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Margin="0,0,0,40" ></TextBlock>
-        <TextBox Name="textBoxAddCategoryName" Text="Введите название" GotFocus="textBoxAddCategoryName_GotFocus" LostFocus="textBoxAddCategoryName_LostFocus" Grid.Row="1" VerticalAlignment="Top" Margin="80,10,80,0" Height="21"></TextBox>
-        <WrapPanel Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,20,0">
+        <StackPanel Orientation="Vertical" Margin="0,90,0,0">
+            <TextBlock Text="Добавить категорию" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Margin="0,0,0,40" ></TextBlock>
+            <TextBox Name="textBoxAddCategoryName" Text="Введите название" GotFocus="textBoxAddCategoryName_GotFocus" LostFocus="textBoxAddCategoryName_LostFocus" Grid.Row="1" VerticalAlignment="Top" Margin="80,10,80,0" Height="21"></TextBox>
+        </StackPanel>
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,20,0">
             <Button Name="buttonAddCategoryOk" MinWidth="70" MinHeight="30" Margin="5" Content="Добавить" Click="buttonAddCategoryOk_Click" ></Button>
             <Button Name="buttonAddCategoryCancel" MinHeight="30" Content="Отмена" Margin="5"  MinWidth="70"></Button>
 

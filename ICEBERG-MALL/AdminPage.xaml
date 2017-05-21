@@ -7,20 +7,34 @@
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="525"
       Title="AdminPage" WindowTitle="Добро пожаловать"  >
+    
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="22*" />
-            <RowDefinition Height="129*"/>
-            <RowDefinition Height="19*"/>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ListView Name="listViewTradePoint" Background="AliceBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Margin="20,40,20,0" Grid.Row="1" SelectionChanged="listViewTradePoint_SelectionChanged">
+        
+
+        <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Name="buttonRemoveTradePoint" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveTradePoint_Click"></Button>
+            <Button Name="buttonAddTradePoint" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddTradePoint_Click"></Button>
+            <Button Name="buttonEditTradePoint" Content="Изменить" IsEnabled="False" MinWidth="60" Click="buttonEditTradePoint_Click"></Button>
+        </WrapPanel>
+        <WrapPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Name="buttonRemoveCategory" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveCategory_Click"></Button>
+            <Button Name="buttonAddCategory" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddCategory_Click"></Button>
+            <Button Name="buttonEditCategory" MinWidth="60" Content="Изменить" IsEnabled="False" Click="buttonEditCategory_Click" ></Button>
+        </WrapPanel>
+        <ListView Name="listViewCategory" Background="AliceBlue"  Grid.Row="1" DisplayMemberPath="NameCategory"  SelectionChanged="listViewCategory_SelectionChanged" Margin="20,0,20,0" ></ListView>
+        <ListView Name="listViewTradePoint" Background="AliceBlue" Grid.Column="1" Grid.Row="1" Margin="20,0,20,0" SelectionChanged="listViewTradePoint_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -34,20 +48,14 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ListView Name="listViewCategory" Background="AliceBlue" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,40,20,0" DisplayMemberPath="NameCategory"  Grid.Row="1" SelectionChanged="listViewCategory_SelectionChanged"></ListView>
-        <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <Button Name="buttonRemoveTradePoint" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveTradePoint_Click"></Button>
-            <Button Name="buttonAddTradePoint" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddTradePoint_Click"></Button>
-            <Button Name="buttonEditTradePoint" Content="Изменить" IsEnabled="False" MinWidth="60" Click="buttonEditTradePoint_Click"></Button>
-        </WrapPanel>
-        <WrapPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <Button Name="buttonRemoveCategory" MinWidth="60" Content="Удалить" IsEnabled="False" Click="buttonRemoveCategory_Click"></Button>
-            <Button Name="buttonAddCategory" MinWidth="60" Content="Добавить" Margin="10 0" Click="buttonAddCategory_Click"></Button>
-            <Button Name="buttonEditCategory" MinWidth="60" Content="Изменить" IsEnabled="False" Click="buttonEditCategory_Click" ></Button>
-        </WrapPanel>
-        <TextBox x:Name="textBoxCategory" Grid.Row="1"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Top"  Height="23" Margin="20,0,20,0" TextWrapping="Wrap" Text="Введите название категории"  />
-        <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-        <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-        <TextBox x:Name="textBoxTradePoint" Grid.Row="1" Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" VerticalAlignment="Top" Grid.Column="1" Height="23"  Margin="20,00,20,10" TextWrapping="Wrap" Text="Введите название магазина"  />
+        <StackPanel Orientation="Vertical">
+            <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <TextBox x:Name="textBoxCategory" Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" Margin="20,10,20,0" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Bottom"  Height="23" TextWrapping="Wrap" Text="Введите название категории"  />
+        </StackPanel>
+        <StackPanel Orientation="Vertical"  Grid.Column="1" >
+            <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <TextBox x:Name="textBoxTradePoint" Grid.Row="1" Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" VerticalAlignment="Top" Grid.Column="1" Height="23"  Margin="20,10,20,0" TextWrapping="Wrap" Text="Введите название магазина"  />
+            
+        </StackPanel>
     </Grid>
 </Page>
