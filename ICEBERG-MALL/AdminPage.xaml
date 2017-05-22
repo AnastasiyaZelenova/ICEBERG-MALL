@@ -50,11 +50,11 @@
         </ListView>
         <StackPanel Orientation="Vertical">
             <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-            <TextBox x:Name="textBoxCategory" Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" Margin="20,10,20,0" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Bottom"  Height="23" TextWrapping="Wrap" Text="Введите название категории"  />
+            <TextBox x:Name="textBoxCategory" Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" Margin="20,10,20,0" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Bottom"  Height="23" TextWrapping="Wrap" Text="Введите название категории" TextChanged="textBoxCategory_TextChanged"  />
         </StackPanel>
         <StackPanel Orientation="Vertical"  Grid.Column="1" >
             <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-            <TextBox x:Name="textBoxTradePoint" Grid.Row="1" Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" VerticalAlignment="Top" Grid.Column="1" Height="23"  Margin="20,10,20,0" TextWrapping="Wrap" Text="Введите название магазина"  />
+            <TextBox x:Name="textBoxTradePoint" Grid.Row="1" Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" VerticalAlignment="Top" Grid.Column="1" Height="23"  Margin="20,10,20,0" TextWrapping="Wrap" TextChanged="textBoxTradePoint_TextChanged" Text="Введите название магазина"  />
         </StackPanel>
     </Grid>
 </Page>

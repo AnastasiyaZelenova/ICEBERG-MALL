@@ -146,5 +146,33 @@ namespace ICEBERG_MALL
             buttonRemoveTradePoint.IsEnabled = listViewTradePoint.SelectedIndex != -1;
             buttonEditTradePoint.IsEnabled = listViewTradePoint.SelectedIndex != -1;
         }
+
+        private void textBoxCategory_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string input = textBoxCategory.Text;
+            if (input == "")
+                listViewCategory.ItemsSource = _methods.Categories;
+            else
+                listViewCategory.ItemsSource = _methods.SearchCategory(input);
+        }
+
+        private void textBoxTradePoint_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (listViewCategory.SelectedIndex != -1)
+            {
+                string input = textBoxTradePoint.Text;
+                Category chosen = listViewCategory.SelectedItem as Category;
+                if (input == "")
+                {
+                    listViewTradePoint.ItemsSource = chosen.TradePoints;
+                }
+                else
+                {
+                    listViewTradePoint.ItemsSource = _methods.SearchTradePoint(chosen, input);
+                }
+            }
+        }
+                    
+        
     }
 }

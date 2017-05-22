@@ -51,6 +51,28 @@ namespace ICEBERG_MALL
             SerializeData();
         }
 
+        public List<Category> SearchCategory(string input)
+        {
+            List<Category> tmp = new List<Category>();
+            foreach (var item in _categories)
+            {
+                if (item.NameCategory.ToUpper().Contains(input.ToUpper()))
+                    tmp.Add(item);
+            }
+            return tmp;
+        }
+
+        public List<TradePoint> SearchTradePoint (Category category, string input)
+        {
+            List<TradePoint> tmp = new List<TradePoint>();
+            foreach (var item in category.TradePoints)
+            {
+                if (item.Name.ToUpper().Contains(input.ToUpper()))
+                    tmp.Add(item);
+            }
+            return tmp;
+        }
+
         public void AddTradePoint(TradePoint tradepoint, Category category)
         {
             category.TradePoints.Add(tradepoint);
