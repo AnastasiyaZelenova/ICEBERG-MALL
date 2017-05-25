@@ -16,7 +16,7 @@ namespace ICEBERG_MALL
             set { _nameCategory = value; }
         }
 
-        private List<TradePoint> _tradePoints;
+        private List<TradePoint> _tradePoints = new List<TradePoint>();
 
         public List<TradePoint> TradePoints
         {

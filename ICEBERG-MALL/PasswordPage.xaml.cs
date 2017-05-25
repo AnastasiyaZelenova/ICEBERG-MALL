@@ -39,19 +39,24 @@ namespace ICEBERG_MALL
 
         private void Page_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            // Using keyboard handling on the page level
             if (e.Key == Key.Enter)
+            {
                 buttonPassword_Click(null, null);
+            }
         }
 
         private void buttonPassword_Click(object sender, RoutedEventArgs e)
         {
             var hash = CalculateHash("12345");
-
-            //if (textBoxLogin.Text == "zelenova" && CalculateHash(passwordBox.Password) == hash)
-            NavigationService.Navigate(new AdminPage(_methods, _category));
-            /*else
-                MessageBox.Show("Incorrect login/password");*/
+            
+            if (textBoxLogin.Text == "zelenova" && CalculateHash(passwordBox.Password) == hash)
+            {
+                NavigationService.Navigate(new AdminPage(_methods, _category));
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность введенных данных", "Ошибка");
+            }
         }
 
         private void buttonPasswordCancel_Click(object sender, RoutedEventArgs e)

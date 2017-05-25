@@ -26,7 +26,7 @@ namespace ICEBERG_MALL
         {
             InitializeComponent();
         }
-
+    
         private void buttonAdmin_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PasswordPage());
@@ -35,6 +35,26 @@ namespace ICEBERG_MALL
         private void buttonUser_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new GuestPage(_methods, _category));
+        }
+
+        private void buttonUser_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonUser.Foreground = Brushes.AliceBlue;
+        }
+
+        private void buttonAdmin_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonAdmin.Foreground = Brushes.AliceBlue;
+        }
+
+        private void buttonAdmin_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonAdmin.Foreground = Brushes.Black;
+        }
+
+        private void buttonUser_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonUser.Foreground = Brushes.Black;
         }
     }
 }

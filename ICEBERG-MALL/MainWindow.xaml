@@ -6,9 +6,15 @@
         xmlns:local="clr-namespace:ICEBERG_MALL"
         mc:Ignorable="d" 
         d:DesignHeight="400" d:DesignWidth="525"
-        Title="MainWindow" MinHeight="400" MaxHeight="400" MinWidth="525" MaxWidth="525" Height="400" Width="525">     
+        Title="ICEBERG MALL" MinHeight="500" MaxHeight="500" MinWidth="625" MaxWidth="625" Height="500" Width="625" Icon="/images/icon.png">
+    
     <Grid>
-        <Frame Name="Frame"/>
-    </Grid>
+
+        <Frame Name="Frame"  NavigationUIVisibility="Hidden"/>
+
+        <Button Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Click="ButtonHome_Click" >
+            <Image x:Name="image" Source="/images/home.png"  />
+        </Button>
+    </Grid> 
     
 </Window>

@@ -7,10 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="525"
       Title="GuestPage" WindowTitle="Добро пожаловать">
+    <Page.Background>
+        <ImageBrush ImageSource="/images/startpage.jpg"></ImageBrush>
+    </Page.Background>
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
-        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="40*" />
             <RowDefinition Height="129*"/>
@@ -20,12 +20,18 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical">
-            <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-            <TextBox x:Name="textBoxCategory"  Background="Honeydew"  GotFocus="textBoxCategory_GotFocus" LostFocus="textBoxCategory_LostFocus" VerticalAlignment="Bottom"  Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название категории"  />
+            <TextBlock  Text="Выбор категории"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,5" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <DockPanel  VerticalAlignment="Center" Margin="20,10,20,0"  >
+                <TextBlock Text="Поиск" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="DemiBold" />
+                <TextBox x:Name="textBoxCategory" Background="Honeydew" Margin="5,0,0,0"    Height="23"  TextWrapping="Wrap" TextChanged="textBoxCategory_TextChanged"  />
+            </DockPanel>
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Column="1">
-            <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,0" FontSize="17" FontWeight="Bold" ></TextBlock>
-            <TextBox x:Name="textBoxTradePoint"  Background="Honeydew" GotFocus="textBoxTradePoint_GotFocus" LostFocus="textBoxTradePoint_LostFocus" Height="23" Margin="20" TextWrapping="Wrap" Text="Введите название магазина"  />
+            <TextBlock Grid.Column="1"  Text="Выбор магазина"  VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="0,20,0,5" FontSize="17" FontWeight="Bold" ></TextBlock>
+            <DockPanel VerticalAlignment="Center" Margin="20,10,20,0">
+                <TextBlock Text="Поиск" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="DemiBold" />
+                <TextBox x:Name="textBoxTradePoint" Margin="5,0,0,0" Background="Honeydew"  Height="23"  TextWrapping="Wrap" TextChanged="textBoxTradePoint_TextChanged" />
+            </DockPanel>
         </StackPanel>
         <ListView Name="listViewCategory" Background="AliceBlue" DisplayMemberPath="NameCategory" Margin="20,10,20,20" Grid.Row="1" SelectionChanged="listViewCategory_SelectionChanged"></ListView>
 
@@ -35,10 +41,10 @@
                     <DockPanel>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="85"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock DockPanel.Dock="Left" Grid.Column="0" Margin="2,0,2,0" Text="{Binding Path = Name}" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBlock>
+                            <TextBlock DockPanel.Dock="Left" Grid.Column="0" Margin="2,0,2,0" Text="{Binding Path = Name}" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" ></TextBlock>
                             <TextBlock DockPanel.Dock="Right" Grid.Column="1" Text="{Binding Path = Description}"  TextWrapping="WrapWithOverflow" HorizontalAlignment="Right" VerticalAlignment="Center" ></TextBlock>
                         </Grid>
                     </DockPanel>

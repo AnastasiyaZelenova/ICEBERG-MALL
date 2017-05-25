@@ -28,22 +28,40 @@ namespace ICEBERG_MALL
             _methods = methods;
             _categories = categories;
         }
-        
-
-        
 
         private void buttonAddCategoryOk_Click(object sender, RoutedEventArgs e)
         {
+            int number;
+            double number1;
             if (string.IsNullOrWhiteSpace(textBoxAddCategoryName.Text))
             {
                 MessageBox.Show("Введите категорию!");
                 textBoxAddCategoryName.Focus();
                 return;
             }
-            
+            if ((int.TryParse(textBoxAddCategoryName.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxAddCategoryName.Focus();
+                return;
+            }
+            if (double.TryParse(textBoxAddCategoryName.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxAddCategoryName.Focus();
+                return;
+            }
+
             Category categoryNew = new Category(textBoxAddCategoryName.Text);
             _methods.AddCategory(categoryNew);
             NavigationService.Navigate(new AdminPage(_methods, _categories));
         }
+
+        private void buttonAddCategoryCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        
     }
 }

@@ -37,15 +37,41 @@ namespace ICEBERG_MALL
 
         private void buttonEditTradePointOk_Click(object sender, RoutedEventArgs e)
         {
+            int number;
+            double number1;
             if (string.IsNullOrWhiteSpace(textBoxEditTradePointName.Text))
             {
                 MessageBox.Show("Введите имя!");
                 textBoxEditTradePointName.Focus();
                 return;
             }
+            if ((int.TryParse(textBoxEditTradePointName.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxEditTradePointName.Focus();
+                return;
+            }
+            if (double.TryParse(textBoxEditTradePointName.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxEditTradePointName.Focus();
+                return;
+            }
             if (string.IsNullOrWhiteSpace(textBoxEditTradePointDescription.Text))
             {
                 MessageBox.Show("Введите описание!");
+                textBoxEditTradePointDescription.Focus();
+                return;
+            }
+            if ((int.TryParse(textBoxEditTradePointDescription.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxEditTradePointDescription.Focus();
+                return;
+            }
+            if (double.TryParse(textBoxEditTradePointDescription.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
                 textBoxEditTradePointDescription.Focus();
                 return;
             }
@@ -59,6 +85,9 @@ namespace ICEBERG_MALL
             NavigationService.Navigate(new AdminPage(_methods, _category));
         }
 
-    
+        private void buttonEditTradePointCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

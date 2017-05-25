@@ -1,58 +1,688 @@
 <?xml version="1.0"?>
 <ArrayOfCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Category>
-    <NameCategory>Спортивные товары </NameCategory>
+    <NameCategory>Бельё</NameCategory>
     <TradePoints>
       <TradePoint>
-        <Name>adidas</Name>
-        <Description>sport</Description>
+        <Name>VOGUE</Name>
+        <Description>Это самая известная марка модного белья и колготок. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>VICTORIA'S SECRET</Name>
+        <Description>Этот культовый бренд, не нуждающийся в дополнительном представлении, Victoria's Secret превращает ваши мечты в реальность.  Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>OYSHO</Name>
+        <Description>Бренд предлагает своим покупателям последние модные тенденции в сегменте нижнего белья и домашней одежды. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>AUBADE</Name>
+        <Description>Aubade – французская марка женского белья. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>INCANTO</Name>
+        <Description>Fashion-бренд INCANTO родом из Италии. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ETAM</Name>
+        <Description>Делать женщину еще более прекрасной, от декольте и до кончиков пальцев – кредо брэнда Etam вот уже на протяжении века. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>FALKE</Name>
+        <Description>FALKE – это международная компания, которая создает не просто чулочно-носочные изделия, но и своего рода образ жизни. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>JOCKEY</Name>
+        <Description>Jockey – бренд с вековой историей, один из лидеров рынка нижнего белья. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>BLISS</Name>
+        <Description>Предприятие разрабатывает и производит инновационное белье различного назначения. Этаж 4.</Description>
       </TradePoint>
     </TradePoints>
   </Category>
   <Category>
-    <NameCategory>Введите название</NameCategory>
+    <NameCategory>Бижутерия и аксессуары</NameCategory>
     <TradePoints>
       <TradePoint>
-        <Name>Название</Name>
-        <Description>Описание</Description>
+        <Name>NOMINATION</Name>
+        <Description>Украшения Nomination Italy разработаны и изготовлены в Тоскане. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>SWAROVSKI</Name>
+        <Description>Swarovski, мировой лидер по огранке кристаллов, приглашает Вас в волшебный мир изделий из кристаллов. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LADY COLLECTION</Name>
+        <Description>Lady Collection – крупнейший бренд модной бижутерии и аксессуаровв России и Казахстане. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>KONPLOTT</Name>
+        <Description>Бренд KONPLOTT  вот уже 30 лет пользуется неизменным признанием среди ценителей авторских украшений. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ELIT ZAKOLKA</Name>
+        <Description>ElitZakolka – салон аксессуаров для волос. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>DIVA</Name>
+        <Description>diva — международный бренд модных аксессуаров, родившийся в Австралии и покоривший сердца девушек всего мира. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CHARM</Name>
+        <Description>Головные уборы. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ACCESSORIZE</Name>
+        <Description>Английский бренд Accessorize представляет огромный ассортимент стильных женских аксессуаров - сумок, головных уборов, шарфов. Этаж 1.</Description>
       </TradePoint>
     </TradePoints>
   </Category>
   <Category>
-    <NameCategory>Введите название</NameCategory>
-    <TradePoints />
-  </Category>
-  <Category>
-    <NameCategory>Введите название категории</NameCategory>
+    <NameCategory>Детская и молодёжная мода</NameCategory>
     <TradePoints>
       <TradePoint>
-        <Name>Nike</Name>
-        <Description>Тут я изменил описание</Description>
+        <Name>DU PAREIL AU MEME</Name>
+        <Description>Du Pareil au Meme(DPAM) – это мировая сеть детской одежды для мальчиков и девочек от 0 до 14 лет. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ИМПЕРИЯ ДЕТСТВА</Name>
+        <Description>Компания «Империя Детства» предлагает широкий ассортимент товаров: детская одежда, обувь  и аксессуары от 0 до 16 лет  престижных европейских производителей. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>SELA</Name>
+        <Description>SELA - это известная российская марка стильной одежды, которая уже 25 лет радует своих покупателей яркими коллекциями, оригинальным дизайном и неизменно высоким качеством.  Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>REIMA</Name>
+        <Description>Ведущий финский производитель высокофункциональной детской одежды для активного отдыха. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>NEXT CHILDREN</Name>
+        <Description>Next - это более чем 500 магазинов в Великобритании и 180 магазинов по всему миру. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MOTHERCARE</Name>
+        <Description>mothercare — единственная сеть магазинов для мам и малышей, по праву признанная экспертом в этом секторе рынка. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GAP KIDS</Name>
+        <Description>Gap – культовый американский бренд модной одежды. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>DISNEY by Samsonite</Name>
+        <Description>Детский магазин. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>B&amp;G STORE</Name>
+        <Description>Одежда для ваших детей. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ADIDAS KIDS</Name>
+        <Description>Компания adidas не только создает качественные и красивые спортивные товары для взрослых, но и производит товары для детей. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>POM D'API</Name>
+        <Description>Pom d’Api – легендарный французский бренд обуви для детей. Этаж 4.</Description>
       </TradePoint>
     </TradePoints>
   </Category>
   <Category>
-    <NameCategory>Введите название</NameCategory>
-    <TradePoints />
-  </Category>
-  <Category>
-    <NameCategory>Введите название категории</NameCategory>
-    <TradePoints />
-  </Category>
-  <Category>
-    <NameCategory>Зеленовка тупкафыафыа</NameCategory>
-    <TradePoints />
-  </Category>
-  <Category>
-    <NameCategory>Обувь</NameCategory>
+    <NameCategory>Женская одежда</NameCategory>
     <TradePoints>
       <TradePoint>
-        <Name>Nike</Name>
-        <Description>Тут изменил описание</Description>
+        <Name>COATS</Name>
+        <Description>Верхняя женская одежда, женская одежда, пляжная одежда, легкая группа, аксессуары, сумки. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>BEBE</Name>
+        <Description>Женская одежда, обувь и аксессуары. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>KAREN MILLEN</Name>
+        <Description>Новые линии, свежие цвета и нестандартный подход к вашей индивидуальности – все это вы найдете к коллекции Весна-Лето 2017. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LAUREN VIDAL</Name>
+        <Description>Женская одежда. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MARELLA</Name>
+        <Description>MARELLA входит в крупнейшую итальянскую корпорацию Max Mara Fashion Group, являясь при этом независимым брендом. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MOTIVI</Name>
+        <Description>Motivi – итальянская марка одежды, диктующая модные условия. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>OBLIQUE CREATIONS</Name>
+        <Description>Это Высокая мода на ладони, идеи "богов" мира дизайна и творчества, воплощенные в реальную жизнь. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>PINKO</Name>
+        <Description>Новая коллекция PINKO сезона весна-лето 2017 создана под влиянием культуры улиц больших городов. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>SFERAMODA</Name>
+        <Description>Женская одежда. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>STRADIVARIUS</Name>
+        <Description>Бренд Stradivarius воплощает молодежный и женственный подход к моде. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>UTERQUE</Name>
+        <Description>Uterqüe – это модный бренд аксессуаров, который может похвастаться уникальным дизайном, отличным качеством изделий и привлекательными ценами. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>КРИСТИА</Name>
+        <Description>"Кристиа" - это сеть уютных магазинов современной женской верхней одежды и трикотажа от мировых производителей с репутацией высокого качества. Этаж 2.</Description>
       </TradePoint>
     </TradePoints>
   </Category>
   <Category>
-    <NameCategory>Зеленова ЗАДРАЛААААААААААА</NameCategory>
+    <NameCategory>Зоомагазин</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ЛЕ'МУРРР</Name>
+        <Description>Просторный магазин, в ассортименте которого широкий спектр товаров для животных. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Игрушки</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ГОРОД ИГРУШЕК</Name>
+        <Description>Каждый ребенок мечтает оказаться в этом волшебном мире игрушек, в окружении прекрасных принцесс и грозных пиратов, мягких зверей и роботов, президентских лимузинов и воздушных змеев. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LEGO</Name>
+        <Description>Сертифицированный магазин LEGO® — это возможность построить свою игровую реальность из конструкторов всемирно известного бренда. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>IQ TOY ПРАВИЛЬНЫЕ ИГРУШКИ</Name>
+        <Description>Игрушки, сувениры, подарки, аксессуары. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>IMAGINARIUM</Name>
+        <Description>Imaginarium – сеть магазинов развивающих игр и игрушек. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>HAMLEYS</Name>
+        <Description>Hamleys – всемирно известный продавец игрушек с более чем 250-летней историей. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>FOR A’N’GELS</Name>
+        <Description>Бутик подарков для девочек и их мам "FOR ANGELS". Этаж 4.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Канцелярские товары</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>КОДИ</Name>
+        <Description>КОДИ – Канцелярия Особенного Дизайнерского Исполнения. Этаж 4.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Книжный магазин</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ЧИТАЙ-ГОРОД</Name>
+        <Description>«Читай-город» - это не просто магазин, а целый мир художественной, публицистической, учебной и научно-популярной литературы. Этаж 4.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Красота и здоровье, оптика</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>BEAUTY BOUTIQUE</Name>
+        <Description>Аксессуары и косметика по уходу за ногтями. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>BOBBI BROWN</Name>
+        <Description>Именная премиальная марка средств макияжа, разработанная визажистом мирового уровня, знаменитой Бобби Браун, и ее философия полностью раскрываются в отдельно стоящих студиях Bobbi Brown. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CHANEL</Name>
+        <Description>Декоративная и уходовая косметика, парфюмерия. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>DEMETER</Name>
+        <Description>Demeter Fragrance Library – это коллекция повседневных и необычных моноароматов из Нью-Йорка. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LUSH</Name>
+        <Description>Английский бренд LUSH – это не только свежая косметика ручной работы, но самая настоящая симфония натуральных ароматов фруктов, овощей, трав и цветов! Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>L`OCCITANE</Name>
+        <Description>Категория товаров: косметика и парфюмерия. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MAC</Name>
+        <Description>M.A.C - марка-лидер в профессиональной косметике, присутствующая за кулисами всех ключевых показов мировых недель моды. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ORGANIC SHOP</Name>
+        <Description>Organic Shop – это первая в России мультибрендовая сеть магазинов с самым большим и уникальным ассортиментом натуральной и органической продукции. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>THE BODY SHOP</Name>
+        <Description>The Body Shop® - международная оригинальная и этичная компания, которая производит великолепную косметику на основе натуральных ингредиентов. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>АПТЕКА 36,6</Name>
+        <Description>Аптечная сеть «36♥6» — национальный лидер в области розничной торговли товарами для красоты и здоровья. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>БУТИК ДЕ ЛЮНЕТ</Name>
+        <Description>"Маргарита-Оптика", в настоящее время «Бутик Де Люнет»,  существует на рынке с 1996 года. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ИВ РОШЕ</Name>
+        <Description>Ив Роше (Yves Rocher) – французская Марка Растительной Косметики. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>Л'ЭТУАЛЬ</Name>
+        <Description>Л’Этуаль – это удобно, модно и красиво. Это место, где вы должны быть! Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>РИВ ГОШ</Name>
+        <Description>РИВ ГОШ – это все самое новое и самое модное в мире красоты! Этаж 1.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Меха</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>MALA MATI</Name>
+        <Description>Шубы. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ТРИ ЛЬВА</Name>
+        <Description>В салоне «Меха Три Льва» представлены лучшие достижения мировой дизайнерской мысли производителей из Италии, Франции, Финляндии. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>СНЕЖНАЯ КОРОЛЕВА</Name>
+        <Description>«Снежная Королева» — крупнейшая российская сеть мультибрендовых магазинов модной одежды. Этаж 3.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Мужская одежда</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>CACHAREL</Name>
+        <Description>Появление одежды и аксессуаров Cacharel знаменовало революцию в мире моды – сочетание дизайна и инноваций. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CAMEL ACTIVE</Name>
+        <Description>Коллекции одежды в стиле casual, основными достоинствами которых стали функциональность, технологичность и высокое качество. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>D'S DAMAT</Name>
+        <Description>Современный крой, высокое качество, широкий ассортимент приятно удивит доступной ценой. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>DE ROSSI</Name>
+        <Description>Итальянский магазин мужской одежды de rossi представляет уникальный по качеству и разнообразию ассортимент. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GI CAPRI</Name>
+        <Description>Кредо GiCapri - натуральность во всем от eco-friendly материалов и технологий до покроя. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GL CLUB</Name>
+        <Description>Мужская одежда. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GUALTIERO</Name>
+        <Description>Бренд  Gualtiero создан и производится на одной из известнейших итальянских фабрик Maglificio Paten Srl.. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>HENDERSON</Name>
+        <Description>Дом моды HENDERSON более 20 лет предлагает мужчинам элегантную и стильную одежду для работы и отдыха. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MEUCCI</Name>
+        <Description>MEUCCI – итальянская марка мужской одежды родом из Флоренции. Этаж 3.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Обувь и сумки</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ALBA</Name>
+        <Description>Сеть обуви и аксессуаров ALBA существует с 1996 года. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>APRIORI</Name>
+        <Description>Аксессуары,головные уборы. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CARLO PAZOLINI</Name>
+        <Description>CARLO PAZOLINI — один из мировых лидеров по производству и продаже обуви и аксессуаров сегмента accessible luxury. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CHESTER</Name>
+        <Description>«Совершенство формы». Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CROCS</Name>
+        <Description>Crocs – это веселый бренд яркой и комфортной обуви для всей семьи! Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MASCOTTE</Name>
+        <Description>Категория товаров: обувь и аксессуары. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>FABI</Name>
+        <Description>Мужская и женская обувь. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ECCO</Name>
+        <Description>ECCO – ведущий мировой производитель комфортной и стильной обуви. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MICHAEL KORS</Name>
+        <Description>В рамках модного дома Michael Kors производятся линии женской и мужской одежды, аксессуаров, обуви. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>TERVOLINA</Name>
+        <Description>TERVOLINA - сеть салонов обуви и аксессуаров, основанная в 1992 г. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Одежда</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>BANANA REPUBLIC</Name>
+        <Description>Banana Republic - это всегда элегантные и универсальные изделия. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>BERSHKA</Name>
+        <Description>Магазины Bershka – это уникальное пространство, где клиенты бренда могут не только совершать покупки, но и наслаждаться музыкой. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>BLACK STAR WEAR</Name>
+        <Description>Black Star Wear - одежда для самовыражения молодых, амбициозных и независящих от мнения других людей. Этаж 2. </Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CALVIN KLEIN JEANS</Name>
+        <Description>Культовый американский бренд, являющийся образцом современного изысканного стиля, который всегда остается верным эстетике естественности и лаконичности форм. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GAP</Name>
+        <Description>Gap – культовый американский бренд модной одежды. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>HUGO BOSS</Name>
+        <Description>Мужская одежда, обувь и аксессуары. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LACOSTE</Name>
+        <Description>LACOSTE отличается утонченным стилем, подчеркивающим яркую индивидуальность. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LADY &amp; GENTLEMAN CITY</Name>
+        <Description>lady &amp; gentleman CITY — первая федеральная сеть универмагов мужской, женской и детской одежды в России. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>LEVI’S</Name>
+        <Description>Бренд Levi’s® — это квинтэссенция классического американского стиля, это мода без дополнительных усилий. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MANGO</Name>
+        <Description>MANGO - испанская торговая марка модной одежды и аксессуаров. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MARKS &amp; SPENCER</Name>
+        <Description>Marks &amp; Spencer — крупный британский бренд одежды, обуви и аксессуаров для всей семьи. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>PULL &amp; BEAR</Name>
+        <Description>Pull&amp;Bear – это больше, чем одежда и аксессуары. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>GUESS</Name>
+        <Description>Сегодня GUESS разрабатывает, рекламирует и продает полные коллекции женской, мужской и детской одежды, а также аксессуары. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>TIMBERLAND</Name>
+        <Description>Timberland (Тимберлэнд) мировой лидер в области дизайна и производства одежды, обуви и аксессуаров премиум класса. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>TOPSHOP/TOPMAN</Name>
+        <Description>Формула успеха Topshop – это всегда быть  в форварде модных тенденций и чутко улавливать вкусы  потребителей. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>WESTLAND</Name>
+        <Description>Сегодня WESTLAND — это не только широкий джинсовый ассортимент, но и мужская и женская повседневная одежда. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>COLIN’S</Name>
+        <Description>COLIN’S является одной из наиболее динамично развивающихся марок на мировом рынке готовой одежды. Этаж 2.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ARMANI JEANS</Name>
+        <Description>Бренд Armani Jeans, появившийся в начале 80-х годов, выражает идею Джорджо Армани о молодежном, неформальном, современном и модном стиле. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ZARA</Name>
+        <Description>Zara разделяет страсть к моде своих клиентов - людей различных культур и возрастов. Этаж 2.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Подарки и сладости</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>BOOLY &amp; BOOM</Name>
+        <Description>«Booly&amp;Boom» - это рай для сладкоежек. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>FRENCH KISS chocolate boutique</Name>
+        <Description>Исключительность сладостей, предлагаемых в бутике бельгийского шоколада ручной работы French Kiss, заключается в том, что их просто невозможно купить с рядового кондитерского лотка. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>MADE BY HAND</Name>
+        <Description>Русские сувениры. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>TABAKPODARKI</Name>
+        <Description>В Магазине представлен широкий ассортимент табачной продукции. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>АРТ ФОТО</Name>
+        <Description>Компания АртФото занимается работой с изображениями на основе фотомонтажа и традиционной живописи. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>КРАСНЫЙ КУБ</Name>
+        <Description>Коллекцию модных аксессуаров Alessandro Frenza. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>СОЛДАТ УДАЧИ</Name>
+        <Description>Федеральная сеть магазинов «Солдат Удачи» предлагает своим покупателям «вещи с характером». Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ШАНТИМЭЛЬ</Name>
+        <Description>Предлагается широкий выбор товаров для проведения семейных праздников, свадеб, юбилеев. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Спорт и активный отдых</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ADIDAS</Name>
+        <Description>adidas Performance - это направление компании, вобравшее в себя современные технологии, которые облегчают тренировки спортсменам. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CONVERSE</Name>
+        <Description>На сегодняшний день ассортимент CONVERSE включает мужскую, женскую и детскую обувь, одежду и аксессуары. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>NIKE</Name>
+        <Description>Начинавшая свой бизнес как беговая компания, Nike сегодня – это то, что выбирают самые быстрые, сильные, смелые и успешные. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>PUMA</Name>
+        <Description>Миссия PUMA – быть самым быстрым спортивным брендом в мире. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>REEBOK</Name>
+        <Description>Reebok – один из ведущих мировых производителей товаров для спорта, фитнеса и активного образа жизни. Этаж 3.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Супермаркет</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ПЕРЕКРЁСТОК</Name>
+        <Description>"Перекрёсток" — ведущая национальная сеть супермаркетов, одна из первых в истории отечественного ритейла. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ФУД СИТИ</Name>
+        <Description>Продовольственная ярмарка. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Техника и мобильная связь</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>YOTA</Name>
+        <Description>Yota — федеральный мобильный оператор, предоставляющий услуги связи и безлимитный интернет для планшета и компьютера. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ЕВРОСЕТЬ</Name>
+        <Description>«Евросеть» — крупнейшая российская компания, работающая на рынке сотового ритейла, основанная в 1997 году. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>САЛОН МТС</Name>
+        <Description>САЛОН МТС. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>СВЯЗНОЙ</Name>
+        <Description>«Связной» - это один из ведущих игроков на рынке ритейла в Восточной Европе. Этаж 1. </Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ТЕХНОСИЛА</Name>
+        <Description>ТЕХНОСИЛА – мультиканальный ритейлер, уже более двадцати лет работающий в сфере розничной торговли. Этаж 3.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ТЕХНОПАРК</Name>
+        <Description>«Технопарк» - это сеть магазинов бытовой техники и электроники, эксперт в области первоклассного сервиса и качества представляемой продукции. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Товары для дома</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>ASKONA</Name>
+        <Description>В фирменном магазине Askona Вас ждет широкий выбор различных товаров для сна. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>COOK HOUSE</Name>
+        <Description>Магазины и кулинарная школа COOK HOUSE ориентированы на средний класс, на современного горожанина. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>HOME &amp; COOK</Name>
+        <Description>Home&amp;Cook — это широкий выбор посуды и бытовой техники. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ЕВРОДОМ</Name>
+        <Description>Невероятные по своей гамме и дизайну изделия из стекла LEONARDO. Этаж 0.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ЛЕОНАРДО</Name>
+        <Description>Хобби-гипермаркет «Леонардо» — сеть качественных товаров для хобби и творчества от мировых производителей по умеренным ценам. Этаж 0.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Ювелирные изделия и часы</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>PANDORA</Name>
+        <Description>PANDORA – всемирно известный датский бренд ювелирных украшений. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>SILVER &amp; SILVER</Name>
+        <Description>«SILVER &amp; SILVER» ориентируется на ювелирные изделия из серебра 925 пробы. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ДИАДЕМА</Name>
+        <Description>Изделия с драгоценными камнями. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>КАРАТ</Name>
+        <Description>«КАРАТ» — динамично развивающийся компания, созданная в 2004 году. Этаж 1.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Рестораны </NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>BASKIN ROBBINS</Name>
+        <Description>Кафе.  Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>DUNKIN DONUTS</Name>
+        <Description>Крупнейшая в мире сеть кофеен. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>KFC</Name>
+        <Description>Популярная сеть предприятий быстрого обслуживания во всем мире. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ГРАБЛИ</Name>
+        <Description>Ресторан. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>CINNABON</Name>
+        <Description>Синнабон — это всемирно известный бренд самых вкусных булочек с корицей! Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>KRISPY KREME</Name>
+        <Description>Пончики. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>БУРГЕР КИНГ</Name>
+        <Description>Бургер Кинг™ - место, где готовят исключительно на гриле. Этаж 4.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>STARBUCKS</Name>
+        <Description>Сеть кофеен. Этаж 1.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>ЁЛКИ-ПАЛКИ</Name>
+        <Description>Ёлки-палки — российская сеть ресторанов домашней кухни. Этаж 4.</Description>
+      </TradePoint>
+    </TradePoints>
+  </Category>
+  <Category>
+    <NameCategory>Развлечения</NameCategory>
+    <TradePoints>
+      <TradePoint>
+        <Name>КОСМИК</Name>
+        <Description>ПАРК РАЗВЛЕЧЕНИЙ. Этаж 5.</Description>
+      </TradePoint>
+      <TradePoint>
+        <Name>"ФОРМУЛА КИНО"</Name>
+        <Description>КИНОТЕАТР. Этаж 4,5</Description>
+      </TradePoint>
+    </TradePoints>
   </Category>
 </ArrayOfCategory>

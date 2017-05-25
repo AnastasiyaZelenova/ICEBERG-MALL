@@ -29,60 +29,44 @@ namespace ICEBERG_MALL
             _category = category;
             comboBox.ItemsSource = _methods.Categories;
         }
-        bool _addTradePointNameEntered = false;
-        private void textBoxAddTradePointName_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (!_addTradePointNameEntered)
-            {
-                textBoxAddTradePointName.Text = "";
-                textBoxAddTradePointName.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
-        private void textBoxAddTradePointName_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBoxAddTradePointName.Text))
-                _addTradePointNameEntered = true;
-            else
-            {
-                textBoxAddTradePointName.Text = "Название";
-                _addTradePointNameEntered = false;
-                textBoxAddTradePointName.Foreground = new SolidColorBrush(Colors.Gray);
-            }
-        }
-        bool _addTradePointDescriptionEntered = false;
-        private void textBoxAddTradePointDescription_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (!_addTradePointDescriptionEntered)
-            {
-                textBoxAddTradePointDescription.Text = "";
-                textBoxAddTradePointDescription.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
-        private void textBoxAddTradePointDescription_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBoxAddTradePointDescription.Text))
-                _addTradePointDescriptionEntered = true;
-            else
-            {
-                textBoxAddTradePointDescription.Text = "Описание";
-                _addTradePointDescriptionEntered = false;
-                textBoxAddTradePointDescription.Foreground = new SolidColorBrush(Colors.Gray);
-            }
-        }
-
+        
         private void buttonAddTradePointOk_Click(object sender, RoutedEventArgs e)
         {
+            int number;
+            double number1;
             if (string.IsNullOrWhiteSpace(textBoxAddTradePointName.Text))
             {
                 MessageBox.Show("Введите название!");
                 textBoxAddTradePointName.Focus();
                 return;
             }
+            if ((int.TryParse(textBoxAddTradePointName.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxAddTradePointName.Focus();
+                return;
+            }
+            if(double.TryParse(textBoxAddTradePointName.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxAddTradePointName.Focus();
+                return;
+            }
             if (string.IsNullOrWhiteSpace(textBoxAddTradePointDescription.Text))
             {
                 MessageBox.Show("Введите описание!");
+                textBoxAddTradePointDescription.Focus();
+                return;
+            }
+            if ((int.TryParse(textBoxAddTradePointDescription.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxAddTradePointDescription.Focus();
+                return;
+            }
+            if(double.TryParse(textBoxAddTradePointDescription.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
                 textBoxAddTradePointDescription.Focus();
                 return;
             }
@@ -98,6 +82,11 @@ namespace ICEBERG_MALL
                 _methods.AddTradePoint(temp, comboBox.SelectedItem as Category);
                 NavigationService.Navigate(new AdminPage(_methods, _category));
             }
+        }
+
+        private void buttonAddTradePointCancel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

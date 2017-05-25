@@ -18,11 +18,11 @@
         <StackPanel Orientation="Vertical" Grid.Row="1">
             <TextBox Name="textBoxEditTradePointName"  VerticalAlignment="Top" Margin="50,10,50,0" TextWrapping="Wrap" />
             <TextBox Name="textBoxEditTradePointDescription" VerticalAlignment="Center" TextWrapping="Wrap" Margin="50,20,50,0" Height="50" ></TextBox>
-            <ComboBox x:Name="comboBox" Margin="50,20,50,0" DisplayMemberPath="NameCategory"  VerticalAlignment="Top" Height="20" />
+            <ComboBox x:Name="comboBox" Margin="50,20,50,0" ItemsSource="{Binding NameCategory}" DisplayMemberPath="NameCategory"  VerticalAlignment="Top" Height="20" />
         </StackPanel>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,20,0">
             <Button Name="buttonEditTradePointOk" MinWidth="70" MinHeight="30" Margin="5" Content="Редактировать" Click="buttonEditTradePointOk_Click" ></Button>
-            <Button Name="buttonEditTradePointCancel" MinHeight="30" Content="Отмена" Margin="5"  MinWidth="70"></Button>
+            <Button Name="buttonEditTradePointCancel" MinHeight="30" Content="Отмена" Margin="5"  MinWidth="70" Click="buttonEditTradePointCancel_Click"></Button>
         </WrapPanel>
 
 

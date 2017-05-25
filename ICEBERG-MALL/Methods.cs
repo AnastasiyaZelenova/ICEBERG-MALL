@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Serialization;
+using System.Windows;
 
 namespace ICEBERG_MALL
 {
@@ -32,7 +33,24 @@ namespace ICEBERG_MALL
 
         public void AddCategory(Category category)
         {
-            _categories.Add(category);
+            int c = 0;
+            List<Category> _tempList = _categories;
+            foreach (Category item in _categories)
+            {
+                if (category.NameCategory == item.NameCategory)
+                {
+                    c++;
+                }
+            }
+            if (c == 0)
+            {
+                _tempList.Add(category);
+            }
+            else
+            {
+                MessageBox.Show("Такая категория уже есть!");
+            }
+            _categories = _tempList;
             _logger.Log($"Добавлена категория {category.NameCategory}");
             SerializeData();
         }
@@ -49,6 +67,28 @@ namespace ICEBERG_MALL
             category.NameCategory = input;
             _logger.Log($"Изменена категория {category.NameCategory}");
             SerializeData();
+        }
+
+        public List<Category> SearchCategory(string input)
+        {
+            List<Category> tmp = new List<Category>();
+            foreach (var item in _categories)
+            {
+                if (item.NameCategory.ToUpper().Contains(input.ToUpper()))
+                    tmp.Add(item);
+            }
+            return tmp;
+        }
+
+        public List<TradePoint> SearchTradePoint (Category category, string input)
+        {
+            List<TradePoint> tmp = new List<TradePoint>();
+            foreach (var item in category.TradePoints)
+            {
+                if (item.Name.ToUpper().Contains(input.ToUpper()))
+                    tmp.Add(item);
+            }
+            return tmp;
         }
 
         public void AddTradePoint(TradePoint tradepoint, Category category)
@@ -92,6 +132,10 @@ namespace ICEBERG_MALL
                     XmlSerializer xml = new XmlSerializer(typeof(List<Category>));
                     _categories = (List<Category>)xml.Deserialize(fs);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Файл не существует, либо он пуст", "Ошибка");
             }
         }
 

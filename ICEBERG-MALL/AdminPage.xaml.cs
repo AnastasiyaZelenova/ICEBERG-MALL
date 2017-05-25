@@ -20,16 +20,16 @@ namespace ICEBERG_MALL
     /// </summary>
     public partial class AdminPage : Page
     {
-        Methods _methods = new Methods();
-        Category _category = new Category();
+        Methods _methods;
+        Category _category;
         
         
         public AdminPage(Methods methods, Category category)
         {
-            InitializeComponent();
-            listViewCategory.ItemsSource = _methods.Categories;
             _methods = methods;
             _category = category;
+            InitializeComponent();
+            listViewCategory.ItemsSource = _methods.Categories;
         }
 
         
@@ -87,48 +87,7 @@ namespace ICEBERG_MALL
 
         }
 
-        bool _categoryEntered = false;
-        private void textBoxCategory_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (!_categoryEntered)
-            {
-                textBoxCategory.Text = "";
-                textBoxCategory.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
-        private void textBoxCategory_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBoxCategory.Text))
-                _categoryEntered = true;
-            else
-            {
-                textBoxCategory.Text = "Введите название категории";
-                _categoryEntered = false;
-                textBoxCategory.Foreground = new SolidColorBrush(Colors.Gray);
-            }
-        }
-        bool _tradePointEntered = false;
-        private void textBoxTradePoint_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (!_tradePointEntered)
-            {
-                textBoxTradePoint.Text = "";
-                textBoxTradePoint.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
-        private void textBoxTradePoint_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBoxTradePoint.Text))
-                _tradePointEntered = true;
-            else
-            {
-                textBoxTradePoint.Text = "Введите название магазина";
-                _tradePointEntered = false;
-                textBoxTradePoint.Foreground = new SolidColorBrush(Colors.Gray);
-            }
-        }
+       
 
         private void listViewCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -136,15 +95,62 @@ namespace ICEBERG_MALL
             buttonEditCategory.IsEnabled = listViewCategory.SelectedIndex != -1;
 
             if (listViewCategory.SelectedIndex != -1)
+            {
                 listViewTradePoint.ItemsSource = (listViewCategory.SelectedItem as Category).TradePoints;
+            }
             else
+            {
                 listViewTradePoint.ItemsSource = null;
+            }
         }
 
         private void listViewTradePoint_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             buttonRemoveTradePoint.IsEnabled = listViewTradePoint.SelectedIndex != -1;
             buttonEditTradePoint.IsEnabled = listViewTradePoint.SelectedIndex != -1;
+        }
+
+        private void textBoxCategory_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (listViewCategory == null)
+                return;
+
+            else
+            {
+                string input = textBoxCategory.Text;
+                if (input == "")
+                {
+                    listViewCategory.ItemsSource = _methods.Categories;
+                }
+                else
+                {
+                    listViewCategory.ItemsSource = _methods.SearchCategory(input);
+                }
+            }
+           
+        }
+
+        private void textBoxTradePoint_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (listViewCategory == null)
+            {
+                return;
+            }
+
+            if (listViewCategory.SelectedIndex != -1)
+            {
+                string input = textBoxTradePoint.Text;
+                Category chosen = listViewCategory.SelectedItem as Category;
+                if (input == "")
+                {
+                    listViewTradePoint.ItemsSource = chosen.TradePoints;
+                }
+                else
+                {
+                    listViewTradePoint.ItemsSource = _methods.SearchTradePoint(chosen, input);
+                }
+            }
         }
     }
 }

@@ -13,8 +13,10 @@ namespace ICEBERG_MALL
 
         public void Log(string message)
         {
-                using (StreamWriter sw= new StreamWriter(_fileNameLog,true))
-                    sw.WriteLine($"{DateTime.Now} - {message}");
+            using (StreamWriter sw = new StreamWriter(_fileNameLog, true))
+            {
+                sw.WriteLine($"{DateTime.Now} - {message}");
+            }
         }
     }
 }

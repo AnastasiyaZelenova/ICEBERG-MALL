@@ -25,5 +25,10 @@ namespace ICEBERG_MALL
             InitializeComponent();
             Frame.Content = new StartPage();
         }
+
+              private void ButtonHome_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = new StartPage();
+        }
     }
 }

@@ -7,10 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="525"
       Title="StartPage" WindowTitle="Добро пожаловать!"  >
+    <Page.Background>
+        <ImageBrush ImageSource="/images/startpage.jpg"></ImageBrush>
+    </Page.Background>
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Анастасия\Desktop\ICEBERG MALL\ICEBERG-MALL\ICEBERG-MALL\startpage.jpg"/>
-        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition ></RowDefinition>
             <RowDefinition ></RowDefinition>
@@ -19,9 +19,70 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttonAdmin" Content="Вход для администратора" HorizontalAlignment="Right"  Grid.Row="1" Height="35"  Width="165"  Click="buttonAdmin_Click" />
-         <Button x:Name="buttonUser" Content="Продолжить просмотр" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Height="35"   Width="165" Click="buttonUser_Click"  />
+        <Button x:Name="buttonAdmin" Content="Вход для администратора" HorizontalAlignment="Right"  Grid.Row="1" Height="35" Margin="0,0,10,0"  Width="165"  Click="buttonAdmin_Click" MouseEnter="buttonAdmin_MouseEnter" MouseLeave="buttonAdmin_MouseLeave">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="25"  Height="{TemplateBinding Height}">
+                        <Border.Background>
+                            <SolidColorBrush x:Name="BorderColor" Color="#FF69B6EB"/>
+                        </Border.Background>
+                        <ContentControl Margin="{TemplateBinding Padding}" 
+                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                    Content="{TemplateBinding Content}" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="BorderColor"
+                                    Storyboard.TargetProperty="Color" To="DodgerBlue" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState Name="Normal">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="BorderColor"
+                                    Storyboard.TargetProperty="Color" To="#FF69B6EB" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttonUser" Content="Продолжить просмотр" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Height="35" Margin="10,0,0,0"   Width="165" Click="buttonUser_Click" MouseEnter="buttonUser_MouseEnter" MouseLeave="buttonUser_MouseLeave">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="25"  Height="{TemplateBinding Height}">
+                        <Border.Background>
+                            <SolidColorBrush x:Name="BorderColor" Color="#FF69B6EB"/>
+                        </Border.Background>
+                        <ContentControl Margin="{TemplateBinding Padding}" 
+                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                    Content="{TemplateBinding Content}" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="BorderColor"
+                                    Storyboard.TargetProperty="Color" To="DodgerBlue" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState Name="Normal">
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="BorderColor"
+                                    Storyboard.TargetProperty="Color" To="#FF69B6EB" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <TextBlock x:Name="textBlockNameMall"   Padding="0,20,0,0" FontWeight="Bold" VerticalAlignment="Top" Grid.ColumnSpan=" 2" TextAlignment="Center" Margin="0,65,0,0" FontSize="49"  Text="ICEBERG MALL"    />
+        
 
     </Grid>
 </Page>

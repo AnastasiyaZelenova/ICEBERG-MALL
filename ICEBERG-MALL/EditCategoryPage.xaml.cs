@@ -33,9 +33,23 @@ namespace ICEBERG_MALL
 
         private void buttonEditCategoryOk_Click(object sender, RoutedEventArgs e)
         {
+            int number;
+            double number1;
             if (string.IsNullOrWhiteSpace(textBoxEditCategory.Text))
             {
                 MessageBox.Show("Введите категорию!");
+                textBoxEditCategory.Focus();
+                return;
+            }
+            if ((int.TryParse(textBoxEditCategory.Text, out number) == true))
+            {
+                MessageBox.Show("Данные введены неверно!");
+                textBoxEditCategory.Focus();
+                return;
+            }
+            if (double.TryParse(textBoxEditCategory.Text, out number1) == true)
+            {
+                MessageBox.Show("Данные введены неверно!");
                 textBoxEditCategory.Focus();
                 return;
             }

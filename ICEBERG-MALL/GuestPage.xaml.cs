@@ -76,14 +76,57 @@ namespace ICEBERG_MALL
         private void listViewCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listViewCategory.SelectedIndex != -1)
+            {
                 listViewTradePoint.ItemsSource = (listViewCategory.SelectedItem as Category).TradePoints;
+            }
             else
+            {
                 listViewTradePoint.ItemsSource = null;
+            }
         }
 
-        private void listViewTradePoint_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void textBoxCategory_TextChanged(object sender, TextChangedEventArgs e)
         {
+            if (listViewCategory == null)
+            {
+                return;
+            }
 
+            else
+            {
+                string input = textBoxCategory.Text;
+                if (input == "")
+                {
+                    listViewCategory.ItemsSource = _methods.Categories;
+                }
+                else
+                {
+                    listViewCategory.ItemsSource = _methods.SearchCategory(input);
+                }
+            }
+
+        }
+
+        private void textBoxTradePoint_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (listViewCategory == null)
+            {
+                return;
+            }
+
+            if (listViewCategory.SelectedIndex != -1)
+            {
+                string input = textBoxTradePoint.Text;
+                Category chosen = listViewCategory.SelectedItem as Category;
+                if (input == "")
+                {
+                    listViewTradePoint.ItemsSource = chosen.TradePoints;
+                }
+                else
+                {
+                    listViewTradePoint.ItemsSource = _methods.SearchTradePoint(chosen, input);
+                }
+            }
         }
     }
 }
